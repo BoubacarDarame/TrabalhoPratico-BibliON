@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblion</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+    <style>
+
+        .custom-navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            box-shadow: none;
+        }
+
+        .custom-navbar .navbar-brand,
+        .custom-navbar .nav-link,
+        .custom-navbar .btn {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .custom-navbar .search-bar .form-control {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.3);
+            color: black;
+        }
+
+        .custom-navbar .search-bar .form-control::placeholder {
+            color: black;
+        }
+
+        .custom-navbar .search-bar .btn {
+            color: white;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .custom-navbar .search-bar .btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .item1 {
+            height: 100svh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            padding-top: 80px;
+            box-sizing: border-box;
+        }
+
+        .item1 .item1-bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+        }
+
+        .intro-text {
+            background-color: rgba(0, 0, 0, 0.3); 
+            backdrop-filter: blur(9px);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            max-width: 1300px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-xl py-3 custom-navbar" data-bs-theme="dark">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="#">
+                <img src="imgs/imagens/Biblion.png" alt="Logo da Empresa" style="height: 80px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCustomContent" aria-controls="navbarCustomContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse align-items-center" id="navbarCustomContent">
+                
+                <div class="d-flex flex-grow-1 justify-content-center px-xl-4 my-3 my-xl-0 search-bar">
+                    <form class="d-flex w-100" role="search" style="max-width: 500px;">
+                        <input class="form-control me-2" type="search" placeholder="O que procura?" aria-label="Pesquisar">
+                        <button class="btn btn-outline-secondary" type="submit">
+                            <i class="bi bi-search"></i> </button>
+                    </form>
+                </div>
+
+                <ul class="navbar-nav flex-row justify-content-center justify-content-xl-start icon-links">
+                    <li class="nav-item me-3"> <a class="nav-link" href="#" aria-label="Página do Cliente">
+                            <i class="bi bi-person-circle fs-4"></i> </a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook fs-4"></i> </a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram fs-4"></i> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="grid-container">
+
+        <div class="item1">
+
+            <img class="item1-bg-image" src="imgs/imagens/Fundo.jpg">
+
+            <h1 class="display-3 fw-bold text-center">
+                Bem Vindo à BibliON
+            </h1>
+
+            <p class="lead fs-4 text-center intro-text"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam neque, auctor non vestibulum posuere, vulputate eget diam. Proin convallis dolor sed condimentum lacinia. Integer lectus est, mollis vitae risus vel, congue egestas sapien. Suspendisse elementum diam in consequat fermentum. Sed eget odio vel odio lacinia pellentesque. Praesent in fermentum massa. Integer felis ante, maximus non semper ac, porta ut risus. Etiam nec facilisis purus.
+            </p>
+            
+        </div>
+        
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
